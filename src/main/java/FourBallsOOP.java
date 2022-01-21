@@ -21,7 +21,7 @@ class CreatingFourBalls extends PApplet{
     public static final int WIDTH = 640;
     public static final int HEIGHT = 380;
 
-    public CreatingFourBalls(int x) {
+    public CreatingFourBalls() {
 
         for (int iterator = 0; iterator < 4; iterator++) {
             
@@ -33,14 +33,8 @@ class CreatingFourBalls extends PApplet{
 public class FourBallsOOP extends CreatingFourBalls {
 
 
-    FourBallsOOP()
-    {
-        super(20);
-    }
     public static void main(String[] args) {
-        FourBallsOOP fourBallsOOP = new FourBallsOOP();
         PApplet.main("FourBallsOOP",args);
-
     }
 
 
