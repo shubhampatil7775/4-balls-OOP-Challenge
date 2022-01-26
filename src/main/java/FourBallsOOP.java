@@ -51,9 +51,13 @@ public class FourBallsOOP extends CreatingFourBalls {
         for (int iterator = 0; iterator < 4; iterator++) {
 
             drawCircle(balls[iterator].xCoordinate,balls[iterator].yCoordinate,balls[iterator].diameter);
-            balls[iterator].xCoordinate+= iterator+1;
+            increaseSpeed(iterator);
         }
 
+    }
+
+    private void increaseSpeed(int iterator) {
+        balls[iterator].xCoordinate+= iterator +1;
     }
 
     private void drawCircle(int xCoordinate, int yCoordinate,int diameter) {
